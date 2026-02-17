@@ -83,7 +83,7 @@ async function loadAlbums() {
 
     const img = document.createElement("img");
     img.className = "imgalbum";
-    img.src = `/albums/${album}/cover.png`;   // ✅ relative path
+    img.src = `/albums/${album}/cover.jpg`;   // ✅ relative path
 
     const titleEl = document.createElement("h4");
     titleEl.textContent = album.split("-")[0].trim();
@@ -310,6 +310,7 @@ const closeBtn = document.getElementById("back");
 closeBtn.addEventListener("click", () => {
   rightPanel.classList.remove("active");
 });
+
 
 
 
