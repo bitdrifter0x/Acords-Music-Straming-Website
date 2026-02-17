@@ -1,0 +1,26 @@
+{
+  "albums": [
+    {
+      "name": "Interstellar",
+      "cover": "/albums/Interstellar/cover.png",
+      "songs": [
+        "/albums/Interstellar/song1.mp3",
+        "/albums/Interstellar/song2.mp3"
+      ]
+    },
+    {
+      "name": "DarkKnight",
+      "cover": "/albums/DarkKnight/cover.png",
+      "songs": [
+        "/albums/DarkKnight/song1.mp3"
+      ]
+    },
+    {
+      "name": "Arijit Singh Mashup - Arijit Singh",
+      "cover": "/albums/Arijit Singh Mashup - Arijit Singh/cover.png",
+      "songs": [
+        "/albums/Arijit Singh Mashup - Arijit Singh/song1.mp3"
+      ]
+    }
+  ]
+}
