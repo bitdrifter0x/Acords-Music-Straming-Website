@@ -10,18 +10,10 @@ function formatDuration(seconds) {
 
 // Fetch album folders (g)
 async function getAlbumFolders() {
-  const res = await fetch("http://192.168.29.65:3000/albums/");
-  const text = await res.text();
-  const doc = new DOMParser().parseFromString(text, "text/html");
+  const res = await fetch("/albums.json");   // ✅ fetch JSON manifest instead
+  const data = await res.json();
+  return data.albums.map(album => album.name);  // ✅ return album names from JSON
 
-  return [...doc.querySelectorAll("a")]
-    .map(a => a.textContent.trim().replace(/\/$/, "")) // get visible name, strip trailing slash
-    .filter(name =>
-      name &&                      // not empty
-      name !== "albums" &&         // exclude the root folder
-      name !== ".." &&             // exclude parent directory link
-      !name.endsWith(".mp3")       // exclude files
-    );
 }
 
 
@@ -29,11 +21,11 @@ async function getAlbumFolders() {
 
 // Fetch files inside a specific album (g)
 async function getFiles(albumName) {
-  const res = await fetch(`http://192.168.29.65:3000/albums/${albumName}/`); // ✅ forward slashes only
-  const text = await res.text();
-  const doc = new DOMParser().parseFromString(text, "text/html");
-  const links = [...doc.querySelectorAll("a")].map(a => a.href);
-  return links.filter(link => link.endsWith(".mp3"));
+  const res = await fetch("/albums.json");   // ✅ use same manifest
+  const data = await res.json();
+  const album = data.albums.find(a => a.name === albumName);
+  return album ? album.songs : [];           // ✅ return song URLs
+
 }
 
 
@@ -91,7 +83,7 @@ async function loadAlbums() {
 
     const img = document.createElement("img");
     img.className = "imgalbum";
-    img.src = `http://192.168.29.65:3000/albums/${album}/cover.jpg`; // ✅ full URL
+    img.src = `/albums/${album}/cover.png`;   // ✅ relative path
 
     const titleEl = document.createElement("h4");
     titleEl.textContent = album.split("-")[0].trim();
@@ -318,6 +310,7 @@ const closeBtn = document.getElementById("back");
 closeBtn.addEventListener("click", () => {
   rightPanel.classList.remove("active");
 });
+
 
 
 
