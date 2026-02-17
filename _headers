@@ -1,0 +1,2 @@
+/albums/*
+  Access-Control-Allow-Origin: *
