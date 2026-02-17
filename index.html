@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acords Music Player - made by Amaan Hasan</title>
+
+    <!-- cdn to extract meta data of song -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utility.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+ 
+<body>
+
+
+    <!-- background image -->
+    <img id="bg" src="/img/pexels-iriser-1086585.jpg">
+    
+    <!-- app container -->
+    <div class="container flex">
+
+    <!-- left container -->
+    <div class="left">
+
+        <!-- left container heading -->
+        <div class="chead flex">
+            <div>
+            <h2>Library</h2>
+            <p>All Music</p>
+            </div>
+
+        <!-- logo -->
+            <div>
+                <img id="logoleft" src="/img/logo7.png">
+            </div>
+        </div>
+
+    <!-- songs container -->
+    <div class="contdes">
+
+        <!-- track list -->
+        <div class="cdes flex">
+            <!-- dummy list element -->
+            <img id="mu" src="/img/music-track.png">
+            <div>
+            <h3>Shape of you</h3>
+            <p>Ed Sheeran</p>
+            </div>
+            <p>02:45</p>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- right container -->
+    <div class="right">
+        
+        <!-- right container heading -->
+        <div class="chead flex">
+            
+            <div id="back">
+            <img src="/img/back.png" alt="">
+            </div>
+            
+            <div id="albumhead">
+            <h2>Playlist</h2>
+            <p>All Albums</p>
+            </div>
+
+        <!-- logo -->
+            <div>
+                <img id="logoright" src="/img/logo7.png">
+            </div>
+        </div>
+
+        <!-- search -->
+        <div class="search-console">
+            <form id="searchForm" class="flex" action="" role="search">
+                <input id="searchInput" placeholder="Search..." />
+            </form>
+        </div>
+        
+        <!-- album cards -->
+            <div class="cards">
+                <div class="card">
+                    <img class="imgalbum" src="/img/Interstellar_m2.jpg">
+                    <h4>Album Name</h4>
+                    <p>Artist Name</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- play container -->
+    <div class="playbar">
+        
+        <!-- selected song details -->
+        <div class="songtitle">
+            <img id="playsong" src="/img/sample_song.jpg">
+            <div>
+                <h4>Song name</h4>
+                <p>artist</p>
+            </div>
+        </div>
+
+
+        <!-- track controls -->
+        <div class="songcontrols">
+            <div class="buttons">
+                <img class="btnsize" src="/img/rewind-button.png">
+                <img class="btnsize" src="/img/pause.png">
+                <img class="btnsize" src="/img/forward.png">
+            </div>
+            <div class="seek">
+                <span id="currentTime">00:00</span>
+                <input type="range" id="seekBar" value="0" min="0" step="1">
+                <span id="totalTime">00:00</span>
+            </div>
+        </div>
+
+
+        <!-- volume adjust -->
+        <div class="volume-control">
+            <div class="volume">
+                <img id="volumebtn" src="/img/sound.png">
+                <input type="range" id="volumeBar" min="0" max="1" step="0.01" value="1">
+            </div>
+        </div>
+
+    </div>
+    <div class="more">
+            <img id="add" src="/img/add.png" alt="">
+        </div>
+    </div>
+    
+    <!-- js link -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
