@@ -1,0 +1,626 @@
+/* universal styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* body styles */
+body{
+    background-color: #101010;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    cursor: default;
+}
+
+
+/* headings and paras */
+p{
+    font-weight: 200;
+}
+
+.plh{
+    margin-left: 12px;
+}
+
+.chead{
+    margin: 20px;
+}
+
+
+
+/* logo styles */
+#logoleft{
+    margin-right: 10px;
+    height: 40px;
+    opacity: 100%;
+    display: none;
+}
+
+/* logo styles */
+#logoright{
+    margin-right: 10px;
+    height: 40px;
+    opacity: 100%;
+}
+
+#add{
+    height: 30px;
+    width: 30px;
+    filter: invert();
+    position: fixed;
+    z-index: 9;
+    right: 15px;
+    top: 360px;
+    display: none;
+}
+
+
+/* search styles */
+.search-console{
+    margin-left: 18px;
+    margin-top: 25px;
+}
+
+.search-console input{
+    font-family: 'Inter', sans-serif;
+    padding-left: 10px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(31, 39, 150, 0.485);
+    width: 67vw;
+    height: 30px;
+}
+
+.search-console input::placeholder{
+    font-family: 'Inter', sans-serif;
+    color: #ffffff71;
+
+}
+
+textarea:focus, input:focus{
+    outline-color: #fff;
+}
+
+
+/* left container styles */
+.left{
+    z-index: 1;
+    width: 30vw;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.322);
+    /* opacity: 70%; */
+    backdrop-filter: blur(15px); 
+} 
+
+
+.contdes{
+    height: 78vh;
+    overflow-y: auto;
+    text-align: center;
+}
+
+
+
+
+.cdes{
+    display: flex;
+    margin-top: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    
+}
+
+#mu{
+    width: 32px;
+    filter: invert();
+}
+
+
+
+
+
+.cdes:hover{
+    /* border-radius: 20px; */
+    background-color: #ffffff16;
+    cursor: pointer; 
+
+}
+
+
+/* scroll styles */
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgba(31, 39, 150, 0.485);
+
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(255, 255, 255);
+}
+
+
+/* right container styles */
+.right{
+    z-index: 1;
+    width: 70vw;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.193);
+    backdrop-filter: blur(15px); 
+    overflow-x: hidden;
+    
+} 
+
+
+
+.imgalbum{
+    width: 170px;
+    height: 170px;
+    border-radius: 10px;  
+    filter: saturate(70%);  
+}  
+
+.cards{
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 25px;
+    gap: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: 20px;
+}
+
+.card{
+    width: 170px;
+    height: 220px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.card:hover{
+    
+    background-color: #ffffff2a;
+    cursor: pointer;
+
+    
+}
+
+
+/* play container styles */
+.playbar{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    backdrop-filter: blur(15px); 
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.songtitle {
+    width: 400px;
+    height: 80px;
+    margin-top: 40px;
+    margin-left: 25px;
+    display: flex;
+    gap: 12px;
+}
+
+.songcontrols{
+    width: 400px;
+    height: 80px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.volume-control{
+    width: 400px;
+    height: 80px;
+    margin-top: 60px;
+    margin-right: 25px;
+    display: flex; 
+    justify-content: right;
+    align-items: right;
+   
+}
+
+
+
+.volume{
+    height: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#volumeBar {
+  width: 100px;
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+#volumeBar::-webkit-slider-thumb {
+  opacity: 0;
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #1db954;
+  cursor: pointer;
+}
+
+.buttons{
+    filter: invert();
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.btnsize{
+    width: 20px;
+    height: 20px;
+}
+
+
+#volumebtn{
+    width: 20px;
+    filter: invert();
+}
+
+#playsong{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+
+
+
+
+#bg{
+    display: flex;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    /* filter: blur(40px); */
+    /* filter: sepia(50%); */
+}
+
+.btnsize:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+
+
+
+
+}
+
+
+
+.seek {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: #fff;
+}
+
+.seek span {
+  min-width: 40px;
+  text-align: center;
+}
+
+/* Base track */
+#seekBar {
+  -webkit-appearance: none;
+  appearance: none;
+  flex: 1;
+  height: 4px;
+  width: 200px;
+  border-radius: 2px;
+  background: rgba(31, 39, 150, 0.485);; /* fallback track color */
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Progress fill (WebKit browsers) */
+#seekBar::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(to right, #fff var(--progress, 0%), rgba(31, 39, 150, 0.485) var(--progress, 0%));
+}
+
+/* Thumb styling */
+#seekBar::-webkit-slider-thumb {
+  opacity: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #101010;
+  margin-top: -4px; /* center thumb vertically */
+  transition: transform 0.2s ease;
+}
+
+#seekBar::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+#back img{
+    width: 30px;
+    margin-left: 17px; 
+    display: none;
+
+}
+
+#albumhead{
+    margin-right: 810px;    
+}
+
+
+
+@media (max-width: 600px) {
+
+    #back img{
+    width: 30px;
+    margin-left: 5px; 
+    margin-top: 5px; 
+    display: block;
+    filter: invert();
+    }
+    
+    #albumhead{
+        margin-right: 30px;
+    }
+
+    /* search styles */
+    .search-console {
+        margin-left: 50px;
+        margin-top: 25px;
+    }
+
+    .search-console input{
+    font-family: 'Inter', sans-serif;
+    padding-left: 14px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(31, 39, 150, 0.485);
+    width: 70vw;
+    height: 30px;
+    }
+
+    /* logo styles */
+    #logoleft {
+        margin-right: 10px;
+        height: 40px;
+        opacity: 100%;
+        display: block;
+    }
+    
+    #logoright {
+        margin-right: 10px;
+        height: 40px;
+        opacity: 100%;
+        display: none;
+    }
+    
+
+    .cards{
+        height: 80vh;
+        display: block;
+        overflow-x: hidden;
+        overflow-y: auto;
+        justify-items: center;
+        margin-right: 16px;
+   }
+
+    .card{
+        width: 280px;
+        height: 350px;
+        padding: 10px;
+        border-radius: 20px;
+        justify-content: center;
+        margin-bottom: 30px;
+   }
+
+   .imgalbum{
+        width: 280px;
+        height: 280px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+   }
+
+    #add {
+        height: 30px;
+        width: 30px;
+        filter: invert();
+        position: fixed;
+        z-index: 4;
+        right: 15px;
+        top: 360px;
+        display: block;
+    }
+
+    .right {
+        z-index: 6;
+        width: 100%;
+        height: 100vh;
+        right: -100%;
+        background-color: rgba(0, 0, 0, 0.193);
+        backdrop-filter: blur(50px);
+        overflow-x: hidden;
+        position: fixed;
+        transition: right 0.4s ease-in-out;
+    }
+
+    .right.active {
+        right: 0;
+        /* slide into view */
+    }
+
+    .left {
+        z-index: 1;
+        width: 100%;
+        height: 60vh;
+        background-color: rgba(0, 0, 0, 0.227);
+        backdrop-filter: blur(50px);
+    }
+
+    .contdes{
+        height: 33vh;
+        overflow-y: auto;
+        text-align: center;
+    }
+        
+    .playbar {
+        width: 100%;
+        height: 50vh;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        backdrop-filter: blur(50px);
+        background-color: rgba(0, 0, 0, 0.555);
+    }
+
+    .songtitle {
+        width: 400px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin: 0;
+        padding-right: 5px;
+        gap: 12px;
+        position: absolute;
+        bottom: 250px;
+            
+    }
+
+    #playsong {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .volume-control {
+        display: none;
+    }
+
+    .songcontrols{
+        width: 400px;
+        height: 80px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 180px;
+    }
+
+    .buttons{
+        filter: invert();
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .btnsize{
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Base track */
+    #seekBar {
+        -webkit-appearance: none;
+        appearance: none;
+        flex: 1;
+        height: 6px;
+        width: 200px;
+        border-radius: 5px;
+        background: rgba(31, 39, 150, 0.485);
+        /* fallback track color */
+        outline: none;
+        cursor: pointer;
+        position: relative;
+    }
+
+    /* Progress fill (WebKit browsers) */
+    #seekBar::-webkit-slider-runnable-track {
+        height: 6px;
+        border-radius: 5px;
+        background: linear-gradient(to right, #fff var(--progress, 0%), rgba(31, 39, 150, 0.485) var(--progress, 0%));
+    }
+
+    /* Thumb styling */
+    #seekBar::-webkit-slider-thumb {
+        opacity: 0;
+        -webkit-appearance: none;
+        appearance: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #fff;
+        border: 2px solid #101010;
+        margin-top: -4px;
+        /* center thumb vertically */
+        transition: transform 0.2s ease;
+    }
+
+    .seek {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        color: #fff;
+    }
+
+        
+
+    /* scroll styles */
+    ::-webkit-scrollbar{
+        opacity: 0;
+        width: 0px;
+    }  
+
+}
+        
+
+
+
