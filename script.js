@@ -32,43 +32,56 @@ async function getFiles(albumName) {
 
 // Extract song metadata (g)
 async function getSongInfo(fileUrl) {
-  return new Promise(resolve => {
-    const audio = new Audio(fileUrl);
+  return new Promise(async resolve => {
+    try {
+      const response = await fetch(fileUrl);
+      const blob = await response.blob();
 
-    audio.addEventListener("loadedmetadata", () => {
-      const duration = audio.duration;
+      const audio = new Audio(fileUrl);
+      audio.addEventListener("loadedmetadata", () => {
+        const duration = audio.duration;
 
-      jsmediatags.read(fileUrl, {
-        onSuccess: tag => {
+        jsmediatags.read(blob, {
+          onSuccess: tag => {
             let cover = null;
             if (tag.tags.picture) {
-                const picture = tag.tags.picture;
-                let base64String = "";
-                for (let i = 0; i < picture.data.length; i++) {
-                    base64String += String.fromCharCode(picture.data[i]);
-                }
-                cover = `data:${picture.format};base64,${btoa(base64String)}`;
+              const picture = tag.tags.picture;
+              let base64String = "";
+              for (let i = 0; i < picture.data.length; i++) {
+                base64String += String.fromCharCode(picture.data[i]);
+              }
+              cover = `data:${picture.format};base64,${btoa(base64String)}`;
             }
-          resolve({
-            cover: cover,
-            name: tag.tags.title || fileUrl.split("/").pop(),
-            artist: tag.tags.artist || "Unknown Artist",
-            duration: formatDuration(duration),
-            file: fileUrl
-          });
-        },
-        onError: () => {
-          resolve({
-            name: fileUrl.split("/").pop(),
-            artist: "Unknown Artist",
-            duration: formatDuration(duration),
-            file: fileUrl
-          });
-        }
+            resolve({
+              cover: cover,
+              name: tag.tags.title || fileUrl.split("/").pop(),
+              artist: tag.tags.artist || "Unknown Artist",
+              duration: formatDuration(duration),
+              file: fileUrl
+            });
+          },
+          onError: () => {
+            resolve({
+              name: fileUrl.split("/").pop(),
+              artist: "Unknown Artist",
+              duration: formatDuration(duration),
+              file: fileUrl
+            });
+          }
+        });
       });
-    });
+    } catch (err) {
+      console.error("Error fetching file:", err);
+      resolve({
+        name: fileUrl.split("/").pop(),
+        artist: "Unknown Artist",
+        duration: "00:00",
+        file: fileUrl
+      });
+    }
   });
 }
+
 
 
 // Build album cards (g)
@@ -310,6 +323,7 @@ const closeBtn = document.getElementById("back");
 closeBtn.addEventListener("click", () => {
   rightPanel.classList.remove("active");
 });
+
 
 
 
