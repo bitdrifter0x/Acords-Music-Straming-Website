@@ -83,5 +83,13 @@ https://acords-music.netlify.app/
 - Skilled in full‑stack web development (MERN, Tailwind, Figma)  
 - Passionate about building interactive apps and optimizing user experience  
 
+
+## Note
+**for offline usage** 
+
+- exclude _headers, albums.json
+- directly link localscript.js to your HTML body
+- create as many albums you want in albums folder and add as many songs as you want inside those albums
+
 ---
 
