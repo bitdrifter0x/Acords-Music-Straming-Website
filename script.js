@@ -12,7 +12,7 @@ function formatDuration(seconds) {
 async function getAlbumFolders() {
   const res = await fetch("/albums.json");   // ✅ fetch JSON manifest instead
   const data = await res.json();
-  return data.albums.map(album => album.name);  // ✅ return album names from JSON
+  return data.albums;
 
 }
 
@@ -90,19 +90,19 @@ async function loadAlbums() {
   const container = document.querySelector(".cards");
   container.innerHTML = "";
 
-  albums.forEach(album => {
+    albums.forEach(album => {
     const card = document.createElement("div");
     card.className = "card";
 
     const img = document.createElement("img");
     img.className = "imgalbum";
-    img.src = `/albums/${album}/cover.jpg`;   // ✅ relative path
+    img.src = album.cover;
 
     const titleEl = document.createElement("h4");
-    titleEl.textContent = album.split("-")[0].trim();
+    titleEl.textContent = album.name.split("-")[0].trim();
 
     const artistEl = document.createElement("p");
-    artistEl.textContent = album.includes("-") ? album.split("-")[1].trim() : "Unknown Artist";
+    artistEl.textContent = album.name.includes("-") ? album.name.split("-")[1].trim() : "Unknown Artist";
 
     card.appendChild(img);
     card.appendChild(titleEl);
@@ -111,7 +111,7 @@ async function loadAlbums() {
     container.appendChild(card);
 
     card.addEventListener("click", () => {
-      loadSongsFromAlbum(album);
+      loadSongsFromAlbum(album.name);
       setTimeout(() => { document.querySelector(".right").classList.remove("active");   
       }, 200); // wait 300ms before closing
 
@@ -323,6 +323,7 @@ const closeBtn = document.getElementById("back");
 closeBtn.addEventListener("click", () => {
   rightPanel.classList.remove("active");
 });
+
 
 
 
