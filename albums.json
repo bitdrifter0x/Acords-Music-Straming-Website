@@ -5,11 +5,11 @@
       "cover": "/albums/Evergreen Tunes - Kishore Kumar/cover.jpg",
       "songs": [
         "albums/Evergreen Tunes - Kishore Kumar/Chukar Mere Mann Ko - Kishore Kumar.mp3",
-        "albums/Evergreen Tunes - Kishore Kumar/Haal Kya Hai Dilon Ka - Anokhi Ada (1973).mp3"
-        "albums/Evergreen Tunes - Kishore Kumar/Khwab Ho Tum Ya -Teen Devian.mp3"
-        "albums/Evergreen Tunes - Kishore Kumar/Mere Mehboob Qayamat Hogi.mp3"
-        "albums/Evergreen Tunes - Kishore Kumar/Mere Sapno Ki Rani - Kishore Kumar.mp3"
-        "albums/Evergreen Tunes - Kishore Kumar/Ye Jo Mohabaat Hai - Kati Patang.mp3"
+        "albums/Evergreen Tunes - Kishore Kumar/Haal Kya Hai Dilon Ka - Anokhi Ada (1973).mp3",
+        "albums/Evergreen Tunes - Kishore Kumar/Khwab Ho Tum Ya -Teen Devian.mp3",
+        "albums/Evergreen Tunes - Kishore Kumar/Mere Mehboob Qayamat Hogi.mp3",
+        "albums/Evergreen Tunes - Kishore Kumar/Mere Sapno Ki Rani - Kishore Kumar.mp3",
+        "albums/Evergreen Tunes - Kishore Kumar/Ye Jo Mohabaat Hai - Kati Patang.mp3",
         "albums/Evergreen Tunes - Kishore Kumar/Yeh Dil Na Hota Bechara - Jewel Thief.mp3"
       ]
     },
@@ -17,12 +17,12 @@
       "name": "Rafi Classics - Mohammed Rafi",
       "cover": "/albums/Rafi Classics - Mohammed Rafi/cover.jpg",
       "songs": [
-        "albums/Rafi Classics - Mohammed Rafi/Deewana Hua Badal - Kashmir Ki Kali (1964).mp3"
-        "albums/Rafi Classics - Mohammed Rafi/Kitna Pyara Wada Hai - Caravan (1971).mp3"
-        "albums/Rafi Classics - Mohammed Rafi/Kya Hua Tera Vada - Mohammed Rafi.mp3"
-        "albums/Rafi Classics - Mohammed Rafi/Likhe Jo Khat Tujhe - Mohammed Rafi.mp3"
-        "albums/Rafi Classics - Mohammed Rafi/Woh Jab Yaad Aaye - Parasmani (1963).mp3"
-        "albums/Rafi Classics - Mohammed Rafi/Yeh Duniya Yeh Mehfil - Mohammed Rafi.mp3"
+        "albums/Rafi Classics - Mohammed Rafi/Deewana Hua Badal - Kashmir Ki Kali (1964).mp3",
+        "albums/Rafi Classics - Mohammed Rafi/Kitna Pyara Wada Hai - Caravan (1971).mp3",
+        "albums/Rafi Classics - Mohammed Rafi/Kya Hua Tera Vada - Mohammed Rafi.mp3",
+        "albums/Rafi Classics - Mohammed Rafi/Likhe Jo Khat Tujhe - Mohammed Rafi.mp3",
+        "albums/Rafi Classics - Mohammed Rafi/Woh Jab Yaad Aaye - Parasmani (1963).mp3",
+        "albums/Rafi Classics - Mohammed Rafi/Yeh Duniya Yeh Mehfil - Mohammed Rafi.mp3",
       ]
     },
 
@@ -30,10 +30,10 @@
       "name": "Atif Aslam Mashup - Atif Aslam",
       "cover": "/albums/Atif Aslam Mashup - Atif Aslam/cover.jpg",
       "songs": [
-        "albums/Atif Aslam Mashup - Atif Aslam/Atif Aslam - Jeena Jeena.mp3"
-        "albums/Atif Aslam Mashup - Atif Aslam/Dil Meri Na Sune Genius 320 Kbps.mp3"
-        "albums/Atif Aslam Mashup - Atif Aslam/Tera Hua Loveyatri A Journey Of Love 320 Kbps.mp3"
-        "albums/Atif Aslam Mashup - Atif Aslam/Tu Chahiye Bajrangi Bhaijaan 320 Kbps.mp3"
+        "albums/Atif Aslam Mashup - Atif Aslam/Atif Aslam - Jeena Jeena.mp3",
+        "albums/Atif Aslam Mashup - Atif Aslam/Dil Meri Na Sune Genius 320 Kbps.mp3",
+        "albums/Atif Aslam Mashup - Atif Aslam/Tera Hua Loveyatri A Journey Of Love 320 Kbps.mp3",
+        "albums/Atif Aslam Mashup - Atif Aslam/Tu Chahiye Bajrangi Bhaijaan 320 Kbps.mp3",
       ]
     },
     
@@ -41,15 +41,12 @@
       "name": "Arijit Singh Mashup - Arijit Singh",
       "cover": "/albums/Arijit Singh Mashup - Arijit Singh/cover.jpg",
       "songs": [
-        "albums/Arijit Singh Mashup - Arijit Singh/87_Raabta_Arijit_Singh_[DJMaza.Life].mp3"
-        "albums/Arijit Singh Mashup - Arijit Singh/Chaleya - Arijit Singh.mp3"
-        "albums/Arijit Singh Mashup - Arijit Singh/O Maahi - Arijit Singh.mp3"
-        "albums/Arijit Singh Mashup - Arijit Singh/Satranga - Arijit Singh.mp3"
-        "albums/Arijit Singh Mashup - Arijit Singh/Ve Kamleya - Arijit singh.mp3"
-        "albums/Arijit Singh Mashup - Arijit Singh/Ve Kamleya - song1.mp3"
-        
-        
-        
+        "albums/Arijit Singh Mashup - Arijit Singh/87_Raabta_Arijit_Singh_[DJMaza.Life].mp3",
+        "albums/Arijit Singh Mashup - Arijit Singh/Chaleya - Arijit Singh.mp3",
+        "albums/Arijit Singh Mashup - Arijit Singh/O Maahi - Arijit Singh.mp3",
+        "albums/Arijit Singh Mashup - Arijit Singh/Satranga - Arijit Singh.mp3",
+        "albums/Arijit Singh Mashup - Arijit Singh/Ve Kamleya - Arijit singh.mp3",
+        "albums/Arijit Singh Mashup - Arijit Singh/Ve Kamleya - song1.mp3",
         
       ]
     }
