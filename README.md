@@ -2,6 +2,9 @@
 A responsive, interactive **music player web application** built from scratch using **HTML, CSS, JavaScript**.  
 This project demonstrates my ability to design, debug, and implement production‑grade front‑end features with clean UI/UX and robust event handling.
 
+**Live Link**
+https://acords-music.netlify.app/
+
 ---
 
 ## ✨ Features
