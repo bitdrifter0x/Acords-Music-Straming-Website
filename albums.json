@@ -1,26 +1,42 @@
 {
   "albums": [
     {
-      "name": "Interstellar",
-      "cover": "/albums/Interstellar/cover.jpg",
+      "name": "Evergreen Tunes - Kishore Kumar",
+      "cover": "/albums/Evergreen Tunes - Kishore Kumar/cover.jpg",
       "songs": [
-        "/albums/Interstellar/song1.mp3",
-        "/albums/Interstellar/song2.mp3"
+        "/albums/Evergreen Tunes - Kishore Kumar/song1.mp3",
+        "/albums/Evergreen Tunes - Kishore Kumar/song2.mp3"
       ]
     },
     {
-      "name": "DarkKnight",
-      "cover": "/albums/DarkKnight/cover.jpg",
+      "name": "Rafi Classics - Mohammed Rafi",
+      "cover": "/albums/Rafi Classics - Mohammed Rafi/cover.jpg",
       "songs": [
-        "/albums/DarkKnight/song1.mp3"
+        "/albums/Rafi Classics - Mohammed Rafi/song1.mp3"
       ]
     },
+
+    {
+      "name": "Atif Aslam Mashup - Atif Aslam",
+      "cover": "/albums/Atif Aslam Mashup - Atif Aslam/cover.jpg",
+      "songs": [
+        "/albums/Atif Aslam Mashup - Atif Aslam/song1.mp3"
+      ]
+    },
+    
     {
       "name": "Arijit Singh Mashup - Arijit Singh",
       "cover": "/albums/Arijit Singh Mashup - Arijit Singh/cover.jpg",
       "songs": [
         "/albums/Arijit Singh Mashup - Arijit Singh/song1.mp3"
+        "/albums/Arijit Singh Mashup - Arijit Singh/song1.mp3"
+        "/albums/Arijit Singh Mashup - Arijit Singh/song1.mp3"
+        "/albums/Arijit Singh Mashup - Arijit Singh/song1.mp3"
+        "/albums/Arijit Singh Mashup - Arijit Singh/song1.mp3"
+        "/albums/Arijit Singh Mashup - Arijit Singh/song1.mp3"
+        "/albums/Arijit Singh Mashup - Arijit Singh/song1.mp3"
       ]
     }
   ]
 }
+ 
