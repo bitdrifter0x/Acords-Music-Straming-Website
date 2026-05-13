@@ -76,14 +76,6 @@ https://acords-music.netlify.app/
 
 ---
 
-## 👨‍💻 Author
-
-**Amaan Hasan**  
-- B.Tech in Computer Science Engineering (Data Science)  
-- Skilled in full‑stack web development (MERN, Tailwind, Figma)  
-- Passionate about building interactive apps and optimizing user experience  
-
-
 ## Note
 **for offline usage** 
 
