@@ -412,7 +412,7 @@ h4 {
 #seekBar::-webkit-slider-runnable-track {
   height: 4px;
   border-radius: 2px;
-  background: linear-gradient(to right, #fff var(--progress, 0%), rgba(31, 39, 150, 0.485) var(--progress, 0%));
+  background: linear-gradient(to right, #fff var(--progress, 0%), background: rgba(255,255,255,0.2); var(--progress, 0%));
 }
 
 /* Thumb styling */
