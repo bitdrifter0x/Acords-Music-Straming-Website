@@ -448,7 +448,7 @@ h4 {
     #back img{
     width: 30px;
     margin-left: 5px; 
-    margin-top: 5px; 
+    margin-top: 2px; 
     display: block;
     filter: invert();
     }
@@ -518,7 +518,7 @@ h4 {
 
     .card{
         height: 350px;
-        width: 300px;
+        width: 280px;
         padding: 10px;
         border-radius: 1px;
         justify-content: center;
@@ -569,7 +569,7 @@ h4 {
         width: 100%;
         height: 100vh;
         right: -100%;
-        background-color: rgba(0, 0, 0, 0.193);
+        background-color: rgb(0, 0, 0);
         overflow-x: hidden;
         position: fixed;
         transition: right 0.4s ease-in-out;
