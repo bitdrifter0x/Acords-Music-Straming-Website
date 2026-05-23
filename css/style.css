@@ -296,31 +296,26 @@ h4 {
     margin: 0;
 }
 
-.songcontrols{
-    width: 400px;
-    height: 80px;
-    margin-top: 20px;
+.songcontrols {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    max-width: 500px;
 }
 
-.volume-control{
-    width: 400px;
-    height: 80px;
-    margin-top: 60px;
-    margin-right: 25px;
-    display: flex; 
-    justify-content: right;
-    align-items: right;
-   
+.volume-control {
+    width: 180px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 
 
-.volume{
+.volume {
     height: 20px;
     display: flex;
     gap: 10px;
@@ -336,6 +331,7 @@ h4 {
   border-radius: 2px;
   cursor: pointer;
   outline: none;
+  background: rgba(255,255,255,0.2);
 }
 
 
@@ -349,16 +345,19 @@ h4 {
   cursor: pointer;
 }
 
-.buttons{
+.buttons {
     filter: invert();
     display: flex;
-    gap: 40px;
+    gap: 32px;
     justify-content: center;
+    align-items: center;
 }
 
-.btnsize{
-    width: 20px;
-    height: 20px;
+.btnsize {
+    width: 22px;
+    height: 22px;
+    transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 
@@ -370,7 +369,6 @@ h4 {
 #playsong{
     width: 45px;
     height: 45px;
-    border-radius: 10px;
 }
 
 .btnsize:hover{
@@ -404,7 +402,7 @@ h4 {
   height: 4px;
   width: 200px;
   border-radius: 2px;
-  background: rgba(31, 39, 150, 0.485);; /* fallback track color */
+  background: rgba(255,255,255,0.2); /* fallback track color */
   outline: none;
   cursor: pointer;
   position: relative;
