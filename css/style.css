@@ -465,7 +465,7 @@ h4 {
 }
 
 .search-console input {
-    height: 12px;
+    height: 18px;
     font-family: 'Inter', sans-serif;
     padding: 12px 16px;
     color: #fff;
@@ -517,8 +517,8 @@ h4 {
    }
 
     .card{
-        height: 320px;
-        width: 250px;
+        height: 350px;
+        width: 300px;
         padding: 10px;
         border-radius: 1px;
         justify-content: center;
@@ -570,7 +570,6 @@ h4 {
         height: 100vh;
         right: -100%;
         background-color: rgba(0, 0, 0, 0.193);
-        backdrop-filter: blur(50px);
         overflow-x: hidden;
         position: fixed;
         transition: right 0.4s ease-in-out;
