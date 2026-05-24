@@ -63,7 +63,8 @@ https://acords-music.netlify.app/
 
 ## 📸 Screenshots
 
-<img width="1915" height="897" alt="image" src="https://github.com/user-attachments/assets/39621f5b-7a0b-4789-bad9-ae071ef6893f" />
+<img width="1915" height="862" alt="image" src="https://github.com/user-attachments/assets/b038835c-b448-4b38-8ba8-d50d2eacf2f8" />
+
 
 ---
 
